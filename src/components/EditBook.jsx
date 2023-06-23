@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function EditBook({ book, updateBook }) {
   const [editedBook, setEditedBook] = useState(book);
@@ -40,7 +40,7 @@ export default function EditBook({ book, updateBook }) {
         <input
           type="text"
           name="deskripsi"
-          value={editedBook.deskripsi}
+          value={editedBook.deskrizpsi}
           onChange={handleInputChange}
         />
       </label>

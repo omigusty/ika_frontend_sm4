@@ -32,7 +32,7 @@ export default function AddBook() {
 
   const updateBook = async (id, newBook) => {
     const response = await fetch(`http://localhost:5000/api/book/${id}`, {
-      mrthod: "PUT",
+      method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newBook),
     });
@@ -98,7 +98,7 @@ export default function AddBook() {
           <tr>
             <th>Judul Buku</th>
             <th>ISBN</th>
-            <th>DESKRIPSI</th>
+            <th>Deskripsi</th>
           </tr>
         </thead>
         <tbody>
